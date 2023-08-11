@@ -31,6 +31,10 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.card section {
+  padding: 2px 0;
+}
+
 .card h1 {
   color: var(--dark-blue);
   font-weight: 700;
