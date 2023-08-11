@@ -21,12 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![design/desktop-design.jpg](design/desktop-design.jpg)
-
-<p align="center">
-  <img src="./sketches/output/00/01-sketch-square-yellow.png" alt="yellow square superimposed on grid of smaller squares" width="45%">
-  <img src="./sketches/output/00/01-sketch-square-black.gif" alt="square made of grid of smaller squares" width="45%">
-</p>
+![A ui card containing a QR code, heading, and caption.](design/desktop-design.jpg)
 
 ### Links
 
