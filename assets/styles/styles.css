@@ -31,10 +31,6 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.card:hover {
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 27px;
-}
-
 .card h1 {
   color: var(--dark-blue);
   font-weight: 700;
@@ -49,8 +45,15 @@ body {
 }
 
 .card img {
-  border-radius: 10px;
   max-width: 100%;
+  display: block;
+}
+
+.img-wrapper {
+  position: relative;
+  border-radius: 10px;
+  margin: 0;
+  overflow: hidden;
 }
 
 footer {
@@ -69,4 +72,38 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 60%);
+}
+
+.img-wrapper::before,
+.img-wrapper::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.08);
+  content: "";
+  height: 305px;
+}
+
+.img-wrapper::before {
+  transform-origin: left top;
+}
+
+.img-wrapper::after {
+  transform-origin: right bottom;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 27px;
+
+  .img-wrapper::before,
+  .img-wrapper::after,
+  .img-wrapper::before,
+  .img-wrapper::after {
+    transform: scale3d(1, 1, 1);
+  }
 }
