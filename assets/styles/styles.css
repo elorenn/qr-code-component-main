@@ -106,8 +106,6 @@ footer {
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 27px;
 
   .img-wrapper::before,
-  .img-wrapper::after,
-  .img-wrapper::before,
   .img-wrapper::after {
     transform: scale3d(1, 1, 1);
   }
