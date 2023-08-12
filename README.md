@@ -10,6 +10,6 @@ Checkout out the live site [here](https://elorenn.github.io/qr-code-component-ma
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexboxgit
+- Flexbox
 - CSS Grid
 - Mobile-first workflow
